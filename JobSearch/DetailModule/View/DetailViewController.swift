@@ -174,6 +174,9 @@ class DetailViewController: UIViewController {
                                                         action: #selector(hide))
         hide.tintColor = .black
         navigationItem.rightBarButtonItems = [favoriteButton, shareButton, hide]
+        respondButton.addTarget(self,
+                                action: #selector(respond),
+                                for: .touchUpInside)
     }
     @objc func settings() {
         viewModel?.backToView()
@@ -186,6 +189,25 @@ class DetailViewController: UIViewController {
     }
     @objc func hide() {
         print("hide")
+    }
+    @objc func respond() {
+        UIView.animate(withDuration: 0.4,
+                       delay: 0,
+                       options: .curveEaseOut,
+                       animations: {
+            self.respondButton.transform = CGAffineTransform(scaleX: 0.75,
+                                                             y: 0.75)
+        }, completion: { finished in
+            print("respond")
+        })
+        UIView.animate(withDuration: 0.4,
+                       delay: 0,
+                       options: .curveEaseOut,
+                       animations: {
+            self.respondButton.transform = CGAffineTransform(scaleX: 1,
+                                                             y: 1)
+        }, completion: nil)
+        
     }
 //MARK: - setupeConstraint
     private func setupeConstraint() {
