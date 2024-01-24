@@ -15,3 +15,4 @@ JobSearch - Мобильное приложение, разработанное 
 ![Simulator Screen Shot - iPhone 14 Pro Max - 2024-01-24 at 16 02 28](https://github.com/VasiliyVygnych/JobSearch/assets/126402174/73c47dcd-b7b5-4dc5-ad8f-9022734dffc9)
 
 
+![Simulator Screen Recording - iPhone 14 Pro Max - 2024-01-24 at 16 01 46](https://github.com/VasiliyVygnych/JobSearch/assets/126402174/85fc9bb0-0048-4404-bba0-70a34a77160e)
